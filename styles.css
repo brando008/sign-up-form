@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  background-color: rgb(251, 247, 245);
+}
+
+/* Photo */
+.photo {
+  width: 40rem;
+  height: 100vh;
+  background-image: url(images/leaf-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 200px;
+}
+
+.text-box > .text {
+  color: black;
+  margin: 20px;
+  font-size: 4rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* Information */
+
+.info-text {
+  padding: 3rem;
+  padding-right: 20rem;
+  margin-top: 3rem;
+  width: 300px; /* Small box to test */
+}
+
+.info-text > .text.long {
+  white-space: nowrap;
+}
+.info-text > .text-short {
+  margin-top: 1rem;
+}
+
+/* Sign Up Form */
+.sign-up-form {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100vh;
+  padding: 1rem 3rem;
+}
+input {
+  width: 200px;
+  height: 25px;
+}
+.row {
+  display: flex;
+  gap: 2rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+/* Password Inputs */
+[id*="password"]:invalid {
+  border: 2px solid red;
+}
+
+[id*="password"]:valid {
+  border: 2px solid green;
+}
+
+/* Sign Up Button */
+.create-account {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(99, 107, 47);
+  border: 0;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.create-account:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px); /* Moves button up slightly */
+}
+
+.create-account:active {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(1px); /* Moves button down slightly */
+}
+
+.sign-up-login p {
+  margin-left: 3rem;
+}
+
+.sign-up-login a {
+  color: rgb(99, 107, 47);
+}
